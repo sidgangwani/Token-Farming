@@ -139,7 +139,7 @@ class App extends Component {
   
   render(){
     var content
-    if(this.loadBlockchainData.loading){
+    if(this.state.loading){
       content = <p className="center">LOADING...................</p>
     }else{
       content = <Content investorTokenBalance = {this.state.investorTokenBalance}
